@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #000428, #004e92);
+  /* background-image: url(background_tec.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  background-size: cover; */
+}
+
+.container {
+  text-align: center;
+}
+
+.cardProfissao {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .name h1 {
+  font-size: 60px;
+}
+
+.container .name h5 {
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#logoCanechia {
+  max-width: 100px;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 50%;
+}
+
+.form button {
+  width: 15%;
+}
