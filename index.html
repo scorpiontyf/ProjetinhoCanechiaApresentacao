@@ -16,18 +16,18 @@
     <header>
       <div>
         <img src="img/canechia.png" alt="Logo" id="logoCanechia" />
-        <ul>
+        <ul style="display: flex; align-items: center; justify-content:flex-end; border-bottom: 1px solid white;">
           <li>
-            <a target="_blank" href="">github</a>
+            <a style="margin-left: 10px;" target="_blank" href="https://github.com/scorpiontyf">github</a>
           </li>
           <li>
-            <a target="_blank" href="https://wa.me/+5521964734745">whatsapp</a>
+            <a style="margin-left: 10px;" target="_blank" href="https://wa.me/+5521964734745">whatsapp</a>
           </li>
           <li>
-            <a target="_blank" href="mailto: devcanechia@gmail.com">email</a>
+            <a style="margin-left: 10px;" target="_blank" href="mailto: devcanechia@gmail.com">email</a>
           </li>
           <li>
-            <a target="_blank" href="sobremim.html">sobre mim</a>
+            <a style="margin-left: 10px; margin-right: 5px;" target="_blank" href="sobremim.html">sobre mim</a>
           </li>
         </ul>
       </div>
@@ -38,28 +38,28 @@
           <h1>Gabriel Canechia</h1>
           <h5>FullStack Developer</h5>
         </div>
-        <div id="arrow">
-          <i class="fa-solid fa-caret-down"></i>
+        <div style="margin-left: 49%; width: 30px;" onclick = 'displayAbout()' id="arrow">
+          <i id="animation" class="fa-solid fa-caret-down"></i>
         </div>
         <div>
           <img src="" alt="" />
           <p></p>
         </div>
-        <div id="about">
+        <div style="display: none;" id="about">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia,
             soluta!
           </p>
         </div>
         <div class="form">
-          <div>
+          <div style="padding-top: 10px;">
             <p>deixe seu contato!</p>
           </div>
           <form action="">
             <input
               type="text"
               placeholder="seu melhor email!"
-              style="color: black"
+              style="color: black;"
             />
             <button>enviar</button>
           </form>
@@ -70,5 +70,16 @@
       src="https://kit.fontawesome.com/67ce126e8a.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function displayAbout(){
+        var arrow = document.getElementById("animation");
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById("about");
+        display.classList.toggle('active');
+      }
+    </script>
+
+
   </body>
 </html>
